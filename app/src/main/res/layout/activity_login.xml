@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".Login">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt"
+        android:layout_marginTop="20dp"
+        android:text="WELCOME,"
+        android:textStyle="bold"
+        android:textColor="@color/persian"
+        android:gravity="center"
+        android:layout_marginHorizontal="5dp"
+        android:textSize="15dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt1"
+        android:layout_below="@id/txt"
+        android:text="WELCOME,"
+        android:textStyle="bold"
+        android:textColor="@color/persian"
+        android:gravity="center"
+        android:layout_marginHorizontal="10dp"
+        android:textSize="15dp"/>
+
+    <ImageView
+        android:layout_width="99dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="232dp"
+        android:layout_toRightOf="@id/txt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.078"
+        app:srcCompat="@drawable/login" />
+
+    <Button
+        android:id="@+id/paid"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/txt1"
+        android:text="History"
+        android:backgroundTint="#987CBF"
+        android:textStyle="bold"
+        android:layout_marginRight="20dp"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/unpaid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt1"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/paid"
+        android:backgroundTint="#987CBF"
+        android:text="Remaining Challan"
+        android:textStyle="bold"
+        android:rippleColor="#CDDC39"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/heading"
+        android:layout_below="@id/paid"
+        android:text=""
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginHorizontal="8dp"
+        android:paddingVertical="10dp"
+        android:textSize="15dp"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list"
+        android:layout_below="@id/heading"
+        android:footerDividersEnabled="false"
+        android:dividerHeight="2dp"
+        android:layout_marginTop="10dp"></ListView>
+    <Button
+        android:id="@+id/track"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="680dp"
+        android:layout_marginLeft="300dp"
+        android:layout_height="wrap_content"
+        android:text="Track"
+
+        android:backgroundTint="#987CBF"
+        android:textStyle="bold"
+        android:layout_marginRight="20dp"
+        android:textSize="15dp" />
+
+
+</RelativeLayout>
